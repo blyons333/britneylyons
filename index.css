@@ -1,34 +1,50 @@
+body{
+	margin: 0px
+}
+
 #header{
 	display: block;
 	width: 100%;
-	padding: 10px 0 20px 0; 	
+	clear: both; 	
 }
 
 .pageWidth{
-	display: block;
-	position: absolute;
-	left: 0px;
-	width: 100%;
-	padding: 20px 0 0 0;
+	background: url('AthensPic.jpg') no-repeat center center;
+	background-size: cover;
+	padding: 20px 0 10px 0;
+	height: 450px;
+	clear: both;
 }
 
 .menu{
 	padding: 0 10px 0 10px;
 	font-family: 'Lato', sans-serif;
-	font-size: 20px;
+	font-size: 23px;
 }
 
 .rightAlign{
 	float: right;
 	height: 500 px;
+	margin: 20px 0 20px 0;
+	position: relative;
+}
+
+.center{
+	margin: 0 50% 0 50%;
+	width: 60%;
+	left: -30%;
+	position: relative;
 }
 
 h1{
-	padding: 5px 0 5px 0;
+	padding: 30px 0 10px 0;
+	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 }
 
 p{
-	padding: 5px 0 5px 0;
+	padding: 5px 0 10px 0;
+	margin: 0;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
 }
