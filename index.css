@@ -1,16 +1,18 @@
 body{
-	margin: 0px
+	margin: 0 0 30px 0;
 }
 
 #header{
 	display: block;
 	width: 100%;
-	clear: both; 	
+	clear: both;
+	min-height: 70px;
 }
 
 .pageWidth{
 	background: url('AthensPic.jpg') no-repeat center center;
 	background-size: cover;
+	margin: 0 0 70px 0;
 	padding: 20px 0 10px 0;
 	height: 450px;
 	clear: both;
@@ -34,6 +36,11 @@ body{
 	width: 60%;
 	left: -30%;
 	position: relative;
+}
+
+#header a{
+	text-decoration: none;
+	color: black;
 }
 
 h1{
