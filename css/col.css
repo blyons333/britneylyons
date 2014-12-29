@@ -55,6 +55,6 @@
 	.col { 
 		margin: 1% 0 1% 0%;
 	}
-	.col:first-child { margin-left: 15%; }
+	.col:first-child { margin-left: 8%; }
 	.col:nth-child(3) { display: none; }
 }

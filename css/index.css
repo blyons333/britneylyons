@@ -21,3 +21,11 @@
 	width: 100%;
 }
 
+@media handheld,screen and (max-width: 480px) {
+	.rightAlign{
+		float: right;
+		margin: 0px 5% 20px 0;
+		position: relative;
+		text-align: right;	
+	}
+}
