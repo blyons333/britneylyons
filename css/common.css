@@ -1,0 +1,131 @@
+body{
+	margin: 0px 25px 0px 25px;
+	color: #242929;
+}
+
+
+/*Define standard fonts and sizes*/
+/*Font styles are coming from typekit, drawn in by js*/
+h1{
+	padding: 0px;
+	margin: -16px 0px 0px 0px;
+	font-size: 96px;
+}
+
+h2{
+	font-size: 70px;
+}
+
+h3{
+	font-size: 32px;
+}
+
+p.large{
+	font-size: 32px;
+}
+
+p {
+	font-size: 18px;
+}
+
+.right-top-align{
+	float: right;
+	margin: -25px -9px 0px 0px;
+}
+
+
+/*Define font sizes for smaller screens*/
+@media only screen and (max-width: 900px) and (min-width: 701px) {
+	h1{
+		padding: 0px;
+		margin: -16px 0px 0px 0px;
+		font-size: 72px;
+	}
+
+	h3{
+		font-size: 24px;
+	}
+
+	p.large{
+		font-size: 30px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 700px) and (min-width: 481px) {
+	h1{
+		padding: 0px;
+		margin: -16px 0px 0px 0px;
+		font-size: 4em;
+	}
+
+	h3{
+		font-size: 1em;
+	}
+
+	p.large{
+		font-size: 1.5em;
+	}
+
+	p {
+		font-size: 1em;
+	}	
+}
+
+@media only screen and (max-width: 480px) {
+	
+}
+
+/*Define standard colors for site*/
+.dark-blue{
+	background-color: #88a0df;
+}
+
+.med-blue{
+	background-color: #b8c6ec;
+}
+
+.light-blue{
+	background-color: #e7ecf9;
+}
+
+.dark-green{
+	background-color: #85b46b;
+}
+
+.med-green{
+	background-color: #b6d2a6;
+}
+
+.light-green{
+	background-color: #e7f0e1;
+}
+
+.dark-coral{
+	background-color: #e79078;
+}
+
+.med-coral{
+	background-color: #f1bcae;
+}
+
+.light-coral{
+	background-color: #fae9e4;
+}
+
+.dark-grey{
+	background-color: #8fa4a5;
+}
+
+.med-grey{
+	background-color: #bcc8c9;
+}
+
+.light-grey{
+	background-color: #e9eded;
+}
+
+
