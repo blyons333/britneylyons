@@ -13,7 +13,7 @@ h1{
 }
 
 h2{
-	font-size: 70px;
+	font-size: 50px;
 }
 
 h3{
@@ -30,12 +30,12 @@ p {
 
 .right-top-align{
 	float: right;
-	margin: -25px -9px 0px 0px;
+	margin: -17px -9px 0px 0px;
 }
 
 
 /*Define font sizes for smaller screens*/
-@media only screen and (max-width: 900px) and (min-width: 701px) {
+@media only screen and (max-width: 950px) and (min-width: 701px) {
 	h1{
 		padding: 0px;
 		margin: -16px 0px 0px 0px;
