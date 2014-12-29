@@ -78,12 +78,17 @@ p {
 @media handheld,screen and (max-width: 480px) {
 	h1{
 		padding: 0px;
-		margin: -11px 0px 0px 0px;
-		font-size: 64px;
+		margin: -7px 0px 0px 0px;
+		font-size: 40px;
+	}
+
+	h2{
+		font-size: 30px;
+
 	}
 
 	h3{
-		font-size: 1em;
+		font-size: 18px;
 	}
 
 	p.large{
@@ -92,7 +97,12 @@ p {
 
 	p {
 		font-size: 1em;
-	}	
+	}
+
+	.right-top-align {
+		float: right;
+		margin: -10px -6px 0px 0px;
+	}
 }
 
 /*Define standard colors for site*/
