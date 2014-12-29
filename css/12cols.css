@@ -62,7 +62,7 @@
 	}
 }
 
-@media only screen and (max-width: 900px) and (min-width: 701px) {
+@media only screen and (max-width: 950px) and (min-width: 701px) {
 	.span_3_of_12 {
 		width: 31%;
 		padding-bottom: 31%;
