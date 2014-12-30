@@ -27,6 +27,12 @@
 	width: 100%;
 }
 
+a:active, a:visited, a:hover, a {
+	color: #242929;
+}
+
+
+/* On hover, we want the design text to appear */
 div#design-content:hover {
 	background: url('../img/DesignText-01.png') no-repeat center center;
 	background-size: cover;
