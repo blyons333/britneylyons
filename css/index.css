@@ -21,6 +21,18 @@
 	width: 100%;
 }
 
+#design-content{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+div#design-content:hover {
+	background: url('../img/DesignText-01.png') no-repeat center center;
+	background-size: cover;
+	cursor: pointer;
+}
+
 @media handheld,screen and (max-width: 480px) {
 	.rightAlign{
 		float: right;
