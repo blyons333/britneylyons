@@ -1,26 +1,75 @@
-body{
-	margin: 0px 25px 0px 25px;
+body {
+	/*margin: 0px 25px 0px 25px;*/
 	color: #242929;
 }
 
+/* Define header styling */
+header {
 
-/*Define standard fonts and sizes*/
-/*Font styles are coming from typekit, drawn in by js*/
-h1{
+}
+
+header div {
+	display: inline-block;
+	min-height: 60px;
+	position: relative;
+	margin-right: -4.5px;
+}
+
+#first-name-header {
+	width: 57%;
+}
+
+#first-name-header h2 { 
+	text-align: right;
+	right: 8px;
+}
+
+#last-name-header {
+	width: 43%;
+}
+
+#last-name-header h2 {
+	text-align: left;
+	left: 8px;
+}
+
+/* Define footer styling */
+footer {
+
+}
+
+
+/* Define standard fonts and sizes */
+/* Font styles are coming from typekit, drawn in by js */
+h1 {
 	padding: 0px;
 	margin: -16px 0px 0px 0px;
 	font-size: 96px;
 }
 
-h2{
+h2 {
 	font-size: 50px;
 }
 
-h3{
+h2.bottom-center {
+	width: 100%;
+	position: absolute;
+	bottom: -6px;
+	text-align: center;
+}
+
+h3 {
 	font-size: 32px;
 }
 
-p.large{
+h3.bottom-center {
+	width: 100%;
+	position: absolute;
+	bottom: -4px;
+	text-align: center;
+}
+
+p.large {
 	font-size: 32px;
 }
 
@@ -28,25 +77,25 @@ p {
 	font-size: 18px;
 }
 
-.right-top-align{
+.right-top-align {
 	float: right;
 	margin: -17px -9px 0px 0px;
+	text-align: right;
 }
-
 
 /*Define font sizes for smaller screens*/
 @media handheld,screen and (max-width: 950px) and (min-width: 751px) {
-	h1{
+	h1 {
 		padding: 0px;
 		margin: -16px 0px 0px 0px;
 		font-size: 72px;
 	}
 
-	h3{
+	h3 {
 		font-size: 24px;
 	}
 
-	p.large{
+	p.large {
 		font-size: 30px;
 	}
 
@@ -56,17 +105,17 @@ p {
 }
 
 @media handheld,screen and (max-width: 750px) and (min-width: 481px) {
-	h1{
+	h1 {
 		padding: 0px;
 		margin: -16px 0px 0px 0px;
 		font-size: 64px;
 	}
 
-	h3{
+	h3 {
 		font-size: 18px;
 	}
 
-	p.large{
+	p.large {
 		font-size: 24px;
 	}
 
@@ -76,7 +125,7 @@ p {
 }
 
 @media handheld,screen and (max-width: 480px) {
-	h1{
+	h1 {
 		padding: 0px;
 		margin: -7px 0px 0px 0px;
 		font-size: 40px;

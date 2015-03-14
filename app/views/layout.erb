@@ -7,17 +7,57 @@
     See: http://necolas.github.com/normalize.css/
   -->
   <link rel="stylesheet" href="/css/normalize.css">
-  <!--
-    application.css is where you put your styles
-  -->
-  <link rel="stylesheet" href="/css/application.css">
 
+  <!-- Add grid layout css -->
+  <link rel="stylesheet" type="text/css" href="/css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/col.css">
+  <link rel="stylesheet" type="text/css" href="/css/10cols.css">
+
+  <!-- Add custom stylesheets -->
+  <link rel="stylesheet" href="/css/application.css">
+  <link rel="stylesheet" href="/css/common.css">
+
+    <!-- Add fonts from typekit -->
+  <script src="//use.typekit.net/bgz5ctl.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <!-- Add Javascript -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
   <title>Britney Lyons</title>
 </head>
 <body>
+  <header class='section group'>
+    <div id='about-header' class='span_1_of_10 dark-blue'>
+      <h3 class='bottom-center'>about</h3>
+    </div>
+    <div id='blog-header' class='span_1_of_10 med-blue'>
+      <h3 class='bottom-center'>blog</h3>
+    </div>
+    <div id='design-header' class='span_1_of_10 dark-green'>
+      <h3 class='bottom-center'>design</h3>
+    </div>
+    <div id='code-header' class='span_1_of_10 med-green'>
+      <h3 class='bottom-center'>code</h3>
+    </div>
+    <div id='name-header' class='span_4_of_10'>
+      <div id='first-name-header' class='dark-coral'>
+        <h2 class='bottom-center'>BRITNEY</h2>
+      </div>
+      <div id='last-name-header' class='med-coral'>
+        <h2 class='bottom-center'>LYONS</h2>
+      </div>
+    </div>
+    <div id='contact-header' class='span_1_of_10 dark-grey'>
+      <h3 class='bottom-center'>contact</h3>
+    </div>
+    <div id='resume-header' class='span_1_of_10 med-grey'>
+      <h3 class='bottom-center'>resume</h3>
+    </div>
+  </header>
   <%= yield %>
+  <footer>
+  </footer>
 </body>
 </html>
