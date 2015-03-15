@@ -7,8 +7,10 @@ $(document).ready(function() {
   $('#menu-toggle').click(function(){
   	if ($('.menu-item').is(":visible")) {
   		$('.menu-item').hide();
+  		$('#menu-toggle-icon').removeClass('rotated');
   	}else{
   		$('.menu-item').show();
+  		$('#menu-toggle-icon').addClass('rotated');
   	}
   });
 });
