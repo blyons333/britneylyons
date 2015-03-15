@@ -37,30 +37,3 @@
 		margin: 1% 0 1% 0%;
 	}
 }
-
-/*
-@media handheld,screen and (max-width: 750px) and (min-width: 481px) {
-	.col { 
-		margin: 1% 0 1% 0%;
-	}
-	.col:first-child { margin-left: 1%; }
-}
-
-
-@media handheld,screen and (max-width: 950px) and (min-width: 751px) {
-	.col { 
-		margin: 1% 0 1% 0%;
-	}
-	.col:first-child { margin-left: 1%; }
-	.col:nth-child(3) { display: none; }
-}
-
-  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS 
-
-@media handheld,screen and (max-width: 480px) {
-	.col { 
-		margin: 1% 0 1% 0%;
-	}
-	.col:first-child { margin-left: 8%; }
-	.col:nth-child(3) { display: none; }
-}*/
