@@ -30,7 +30,14 @@ header {
 
 }
 
-header a div {
+/*header a div {
+	display: inline-block;
+	height: 60px;
+	position: relative;
+	margin-right: -4.5px;
+}*/
+
+.menu-block {
 	display: inline-block;
 	height: 60px;
 	position: relative;
@@ -60,13 +67,6 @@ footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-}
-
-footer div {
-	display: inline-block;
-	height: 60px;
-	position: relative;
-	margin-right: -4.5px;
 }
 
 footer div img {
@@ -265,7 +265,7 @@ p {
 
 	h3.bottom-center {
 		position: relative;
-		padding-top: 20px;
+		padding-top: 15px;
 	}
 
 	p.large{
@@ -276,7 +276,7 @@ p {
 		font-size: 1em;
 	}
 
-	header a div {
+	.menu-block {
 		margin-bottom: -4.5px;
 	}
 

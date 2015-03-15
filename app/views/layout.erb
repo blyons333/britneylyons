@@ -14,7 +14,6 @@
   <link rel="stylesheet" type="text/css" href="/css/10cols.css">
 
   <!-- Add custom stylesheets -->
-  <link rel="stylesheet" href="/css/application.css">
   <link rel="stylesheet" href="/css/common.css">
 
     <!-- Add fonts from typekit -->
@@ -33,70 +32,67 @@
 </head>
 <body>
   <div id="wrapper">
-    <header class='section group'>
-      <a href='/home' class='mobile-only'>
-        <div id='name-header' class='span_4_of_10'>
-          <div id='menu-toggle' class='dark-coral'>
-            <img src='/img/menu-icon.png' />
-          </div>
-          <div id='first-name-header' class='dark-coral'>
+    <header class='section group'>      
+      <div id='name-header' class='span_4_of_10 menu-block'>
+        <div id='menu-toggle' class='dark-coral menu-block'>
+          <img src='/img/menu-icon.png' />
+        </div>
+        <a href='/home' class='mobile-only'>
+          <div id='first-name-header' class='dark-coral menu-block'>
             <h2 class='bottom-center'>BRITNEY</h2>
           </div>
-          <div id='last-name-header' class='med-coral'>
+          <div id='last-name-header' class='med-coral menu-block'>
             <h2 class='bottom-center'>LYONS</h2>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
       <a href='/about' class='menu-item'>
-        <div id='about-header' class='span_1_of_10 dark-blue'>
+        <div id='about-header' class='span_1_of_10 dark-blue menu-block'>
           <h3 class='bottom-center'>about</h3>
         </div>
       </a>
       <a href='/blog' class='menu-item'>
-        <div id='blog-header' class='span_1_of_10 med-blue'>
+        <div id='blog-header' class='span_1_of_10 med-blue menu-block'>
           <h3 class='bottom-center'>blog</h3>
         </div>
       </a>
       <a href='/design' class='menu-item'>
-        <div id='design-header' class='span_1_of_10 dark-green'>
+        <div id='design-header' class='span_1_of_10 dark-green menu-block'>
           <h3 class='bottom-center'>design</h3>
         </div>
       </a>
       <a href='/code' class='menu-item'>
-        <div id='code-header' class='span_1_of_10 med-green'>
+        <div id='code-header' class='span_1_of_10 med-green menu-block'>
           <h3 class='bottom-center'>code</h3>
         </div>
       </a>
       <a href='/contact' class='menu-item mobile-only'>
-        <div id='contact-header' class='span_1_of_10 dark-grey'>
+        <div id='contact-header' class='span_1_of_10 dark-grey menu-block'>
           <h3 class='bottom-center'>contact</h3>
         </div>
       </a>
       <a href='/resume' class='menu-item mobile-only'>
-        <div id='resume-header' class='span_1_of_10 med-grey'>
+        <div id='resume-header' class='span_1_of_10 med-grey menu-block'>
           <h3 class='bottom-center'>resume</h3>
         </div>
       </a>
       <a href='/home' class='mobile-hide'>
-        <div id='name-header' class='span_4_of_10'>
-          <div id='first-name-header' class='dark-coral'>
-            <div id='menu-icon' class='mobile-only'>
-              <p id="menu-toggle">Menu</p>
-            </div>
+        <div id='name-header' class='span_4_of_10 menu-block'>
+          <div id='first-name-header' class='dark-coral menu-block'>
             <h2 class='bottom-center'>BRITNEY</h2>
           </div>
-          <div id='last-name-header' class='med-coral'>
+          <div id='last-name-header' class='med-coral menu-block'>
             <h2 class='bottom-center'>LYONS</h2>
           </div>
         </div>
       </a>
       <a href='/contact' class='mobile-hide'>
-        <div id='contact-header' class='span_1_of_10 dark-grey'>
+        <div id='contact-header' class='span_1_of_10 dark-grey menu-block'>
           <h3 class='bottom-center'>contact</h3>
         </div>
       </a>
       <a href='/resume' class='mobile-hide'>
-        <div id='resume-header' class='span_1_of_10 med-grey'>
+        <div id='resume-header' class='span_1_of_10 med-grey menu-block'>
           <h3 class='bottom-center'>resume</h3>
         </div>
       </a>
@@ -105,27 +101,27 @@
       <%= yield %>
     </div>
     <footer>
-      <div class='span_1_of_10 dark-blue mobile-hide'>
+      <div class='span_1_of_10 dark-blue mobile-hide menu-block'>
       </div>
-      <div class='span_1_of_10 med-blue mobile-hide'>
+      <div class='span_1_of_10 med-blue mobile-hide menu-block'>
       </div>
-      <div class='span_1_of_10 dark-green mobile-hide'>
+      <div class='span_1_of_10 dark-green mobile-hide menu-block'>
       </div>
-      <div class='span_1_of_10 med-green mobile-hide'>
+      <div class='span_1_of_10 med-green mobile-hide menu-block'>
         <img src='/img/github-icon.png' />
       </div>
-      <div id='name-footer' class='span_4_of_10'>
-        <div id='first-name-footer' class='dark-coral'>
+      <div id='name-footer' class='span_4_of_10 menu-block'>
+        <div id='first-name-footer' class='dark-coral menu-block'>
           <h2 class='top-center'>BRITNEY</h2>
         </div>
-        <div id='last-name-footer' class='med-coral'>
+        <div id='last-name-footer' class='med-coral menu-block'>
           <h2 class='top-center'>LYONS</h2>
         </div>
       </div>
-      <div class='span_1_of_10 dark-grey mobile-hide'>
+      <div class='span_1_of_10 dark-grey mobile-hide menu-block'>
         <img src='/img/email-icon.png' />
       </div>
-      <div class='span_1_of_10 med-grey mobile-hide'>
+      <div class='span_1_of_10 med-grey mobile-hide menu-block'>
         <img src='/img/phone-icon.png' />
       </div>
     </footer>
