@@ -25,39 +25,110 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
+    <!-- Set options so media queries recognizes mobile -->
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
   <title>Britney Lyons</title>
 </head>
 <body>
-  <header class='section group'>
-    <div id='about-header' class='span_1_of_10 dark-blue'>
-      <h3 class='bottom-center'>about</h3>
+  <div id="wrapper">
+    <header class='section group'>
+      <a href='/home' class='mobile-only'>
+        <div id='name-header' class='span_4_of_10'>
+          <div id='menu-toggle' class='dark-coral'>
+            <img src='/img/menu-icon.png' />
+          </div>
+          <div id='first-name-header' class='dark-coral'>
+            <h2 class='bottom-center'>BRITNEY</h2>
+          </div>
+          <div id='last-name-header' class='med-coral'>
+            <h2 class='bottom-center'>LYONS</h2>
+          </div>
+        </div>
+      </a>
+      <a href='/about' class='menu-item'>
+        <div id='about-header' class='span_1_of_10 dark-blue'>
+          <h3 class='bottom-center'>about</h3>
+        </div>
+      </a>
+      <a href='/blog' class='menu-item'>
+        <div id='blog-header' class='span_1_of_10 med-blue'>
+          <h3 class='bottom-center'>blog</h3>
+        </div>
+      </a>
+      <a href='/design' class='menu-item'>
+        <div id='design-header' class='span_1_of_10 dark-green'>
+          <h3 class='bottom-center'>design</h3>
+        </div>
+      </a>
+      <a href='/code' class='menu-item'>
+        <div id='code-header' class='span_1_of_10 med-green'>
+          <h3 class='bottom-center'>code</h3>
+        </div>
+      </a>
+      <a href='/contact' class='menu-item mobile-only'>
+        <div id='contact-header' class='span_1_of_10 dark-grey'>
+          <h3 class='bottom-center'>contact</h3>
+        </div>
+      </a>
+      <a href='/resume' class='menu-item mobile-only'>
+        <div id='resume-header' class='span_1_of_10 med-grey'>
+          <h3 class='bottom-center'>resume</h3>
+        </div>
+      </a>
+      <a href='/home' class='mobile-hide'>
+        <div id='name-header' class='span_4_of_10'>
+          <div id='first-name-header' class='dark-coral'>
+            <div id='menu-icon' class='mobile-only'>
+              <p id="menu-toggle">Menu</p>
+            </div>
+            <h2 class='bottom-center'>BRITNEY</h2>
+          </div>
+          <div id='last-name-header' class='med-coral'>
+            <h2 class='bottom-center'>LYONS</h2>
+          </div>
+        </div>
+      </a>
+      <a href='/contact' class='mobile-hide'>
+        <div id='contact-header' class='span_1_of_10 dark-grey'>
+          <h3 class='bottom-center'>contact</h3>
+        </div>
+      </a>
+      <a href='/resume' class='mobile-hide'>
+        <div id='resume-header' class='span_1_of_10 med-grey'>
+          <h3 class='bottom-center'>resume</h3>
+        </div>
+      </a>
+    </header>
+    <div id='content'>
+      <%= yield %>
     </div>
-    <div id='blog-header' class='span_1_of_10 med-blue'>
-      <h3 class='bottom-center'>blog</h3>
-    </div>
-    <div id='design-header' class='span_1_of_10 dark-green'>
-      <h3 class='bottom-center'>design</h3>
-    </div>
-    <div id='code-header' class='span_1_of_10 med-green'>
-      <h3 class='bottom-center'>code</h3>
-    </div>
-    <div id='name-header' class='span_4_of_10'>
-      <div id='first-name-header' class='dark-coral'>
-        <h2 class='bottom-center'>BRITNEY</h2>
+    <footer>
+      <div class='span_1_of_10 dark-blue mobile-hide'>
       </div>
-      <div id='last-name-header' class='med-coral'>
-        <h2 class='bottom-center'>LYONS</h2>
+      <div class='span_1_of_10 med-blue mobile-hide'>
       </div>
-    </div>
-    <div id='contact-header' class='span_1_of_10 dark-grey'>
-      <h3 class='bottom-center'>contact</h3>
-    </div>
-    <div id='resume-header' class='span_1_of_10 med-grey'>
-      <h3 class='bottom-center'>resume</h3>
-    </div>
-  </header>
-  <%= yield %>
-  <footer>
-  </footer>
+      <div class='span_1_of_10 dark-green mobile-hide'>
+      </div>
+      <div class='span_1_of_10 med-green mobile-hide'>
+        <img src='/img/github-icon.png' />
+      </div>
+      <div id='name-footer' class='span_4_of_10'>
+        <div id='first-name-footer' class='dark-coral'>
+          <h2 class='top-center'>BRITNEY</h2>
+        </div>
+        <div id='last-name-footer' class='med-coral'>
+          <h2 class='top-center'>LYONS</h2>
+        </div>
+      </div>
+      <div class='span_1_of_10 dark-grey mobile-hide'>
+        <img src='/img/email-icon.png' />
+      </div>
+      <div class='span_1_of_10 med-grey mobile-hide'>
+        <img src='/img/phone-icon.png' />
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

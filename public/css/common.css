@@ -1,6 +1,28 @@
-body {
-	/*margin: 0px 25px 0px 25px;*/
+html, body {
 	color: #242929;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+#content {
+	position: relative;
+	padding-top: 60px;
+	padding-bottom: 120px;
+}
+
+a {
+	color: #242929;
+	text-decoration: none;
+}
+
+a.active{
+	color: #F8F8F8;
 }
 
 /* Define header styling */
@@ -8,34 +30,53 @@ header {
 
 }
 
-header div {
+header a div {
 	display: inline-block;
-	min-height: 60px;
+	height: 60px;
 	position: relative;
 	margin-right: -4.5px;
 }
 
-#first-name-header {
+#first-name-header, #first-name-footer {
 	width: 57%;
 }
 
-#first-name-header h2 { 
+#first-name-header h2, #first-name-footer h2 { 
 	text-align: right;
 	right: 8px;
 }
 
-#last-name-header {
+#last-name-header, #last-name-footer {
 	width: 43%;
 }
 
-#last-name-header h2 {
+#last-name-header h2, #last-name-footer h2 {
 	text-align: left;
 	left: 8px;
 }
 
 /* Define footer styling */
 footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
 
+footer div {
+	display: inline-block;
+	height: 60px;
+	position: relative;
+	margin-right: -4.5px;
+}
+
+footer div img {
+	position: relative;
+	max-height: 90%;
+	max-width: 90%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -5px;
 }
 
 
@@ -58,14 +99,28 @@ h2.bottom-center {
 	text-align: center;
 }
 
+h2.top-center {
+	width: 100%;
+	position: absolute;
+	top: -5px;
+	text-align: center;
+}
+
 h3 {
-	font-size: 32px;
+	font-size: 30px;
 }
 
 h3.bottom-center {
 	width: 100%;
 	position: absolute;
 	bottom: -4px;
+	text-align: center;
+}
+
+h3.top-center {
+	width: 100%;
+	position: absolute;
+	top: -4px;
 	text-align: center;
 }
 
@@ -83,8 +138,67 @@ p {
 	text-align: right;
 }
 
+.mobile-only {
+	display: none;
+}
+
 /*Define font sizes for smaller screens*/
-@media handheld,screen and (max-width: 950px) and (min-width: 751px) {
+
+/* Screens smaller than 1325, but larger than 1116 */
+@media handheld,screen and (max-width: 1325px) and (min-width: 1116px) {
+	h1 {
+		font-size: 76px;
+	}
+
+	h2 {
+		font-size: 45px;
+	}
+
+	h2.bottom-center {
+		bottom: -5px;
+	}
+
+	h3 {
+		font-size: 25px;
+	}
+
+	h3.bottom-center {
+		bottom: -3px;
+	}
+
+	p.large {
+		font-size: 28px;
+	}
+}
+
+/* Screens smaller than 1115, but larger than 951*/
+@media handheld,screen and (max-width: 1115px) and (min-width: 951px) {
+	h1 {
+		font-size: 68px;
+	}
+
+	h2 {
+		font-size: 38px;
+	}
+
+	h2.bottom-center {
+		bottom: -4px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	h3.bottom-center {
+		bottom: -2px;
+	}
+
+	p.large {
+		font-size: 22px;
+	}
+}
+
+/*@media handheld,screen and (max-width: 950px) and (min-width: 751px) {
 	h1 {
 		padding: 0px;
 		margin: -16px 0px 0px 0px;
@@ -102,6 +216,8 @@ p {
 	p {
 		font-size: 16px;
 	}
+
+
 }
 
 @media handheld,screen and (max-width: 750px) and (min-width: 481px) {
@@ -122,9 +238,9 @@ p {
 	p {
 		font-size: 18px;
 	}	
-}
+}*/
 
-@media handheld,screen and (max-width: 480px) {
+@media handheld,screen and (max-width: 950px) {
 	h1 {
 		padding: 0px;
 		margin: -7px 0px 0px 0px;
@@ -132,12 +248,24 @@ p {
 	}
 
 	h2{
-		font-size: 30px;
+		font-size: 25px;
+	}
 
+	h2.bottom-center {
+		bottom: 15px;
+	}
+
+	h2.top-center {
+		top: -2px;
 	}
 
 	h3{
 		font-size: 18px;
+	}
+
+	h3.bottom-center {
+		position: relative;
+		padding-top: 20px;
 	}
 
 	p.large{
@@ -148,10 +276,67 @@ p {
 		font-size: 1em;
 	}
 
-	.right-top-align {
-		float: right;
-		margin: -11px -6px 0px 0px;
+	header a div {
+		margin-bottom: -4.5px;
 	}
+
+	.mobile-only {
+		display: inline;
+	}
+
+	.menu-item {
+		display: none;
+	}
+
+	.mobile-hide {
+		display: none;
+	}
+
+	#content {
+		padding-top: 0px;
+		padding-bottom: 60px;
+	}
+
+	#first-name-header {
+		width: 50%;
+	}
+
+	#menu-toggle {
+		width: 15%;
+	}
+
+	#menu-toggle .bottom-center {
+		bottom: -1px;
+		position: absolute;
+	}
+
+	#menu-toggle img {
+		position: relative;
+		height: 30px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		bottom: -17px;
+	}
+
+	#first-name-footer {
+		width: 65%;
+	}
+
+	#first-name-header h2, #first-name-footer h2 { 
+		text-align: right;
+		right: 5px;
+	}
+
+	#last-name-header, #last-name-footer {
+		width: 35%;
+	}
+
+	#last-name-header h2, #last-name-footer h2 {
+		text-align: left;
+		left: 5px;
+	}
+
 }
 
 /*Define standard colors for site*/

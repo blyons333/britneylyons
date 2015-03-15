@@ -42,9 +42,9 @@
 }
 
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+/*  GO FULL WIDTH AT LESS THAN 950 PIXELS */
 
-@media only screen and (max-width: 480px) {
+@media handheld,screen and (max-width: 950px) {
 	.span_10_of_10 {
 		width: 100%; 
 	}

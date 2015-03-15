@@ -32,7 +32,13 @@
 
 .col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
 
+@media handheld,screen and (max-width: 950px) {
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+}
 
+/*
 @media handheld,screen and (max-width: 750px) and (min-width: 481px) {
 	.col { 
 		margin: 1% 0 1% 0%;
@@ -49,7 +55,7 @@
 	.col:nth-child(3) { display: none; }
 }
 
-/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS 
 
 @media handheld,screen and (max-width: 480px) {
 	.col { 
@@ -57,4 +63,4 @@
 	}
 	.col:first-child { margin-left: 8%; }
 	.col:nth-child(3) { display: none; }
-}
+}*/
