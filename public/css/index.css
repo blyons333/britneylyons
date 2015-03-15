@@ -1,10 +1,10 @@
-.col {
-	margin: 0;
-}
-
 img {
 	max-width: 100%;
 	max-height: 100%;
+}
+
+h1 p {
+	padding-top: 10px;
 }
 
 #welcome-text {
@@ -18,10 +18,11 @@ img {
 	height: 100%;
 }
 
-h1 p {
-	padding-top: 10px;
+.col {
+	margin: 0;
 }
 
+/* CSS Changes that happen on a mobile phone */
 @media handheld,screen and (max-width: 950px) {
 	#welcome-text {
 		text-align: left;
