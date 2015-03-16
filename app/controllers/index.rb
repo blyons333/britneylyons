@@ -7,11 +7,6 @@ get '/home' do
 	erb :index
 end
 
-get '/design' do
-	# Get the design page
-	erb :design
-end
-
 get '/about' do
 	# Get the about page
 	erb :about
